@@ -1,0 +1,62 @@
+
+.homeContainer  { 
+    background: radial-gradient(230.13% 143.81% at 92.74% 11.86%, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.20) 100%), #070625;
+    text-align: center;
+    padding-top: 180px;
+    @media (min-width: 640px) { // sm breakpoint
+        padding-top: 220px;
+    }
+    @media (min-width: 768px) { // md breakpoint
+        padding-top: 250px;
+    }
+
+    .Welcome {
+        color: var(--Neutral-White, #FFF);
+        font-size: 2.3rem;
+        font-weight: 100;
+        letter-spacing: -2px;
+        @media (min-width: 640px) { // sm breakpoint
+            font-size: 3rem;
+            letter-spacing: -3.2px;
+        }
+        @media (min-width: 768px) { // md breakpoint
+            font-size: 3.75rem;
+        }
+    }
+
+    .Ghub {
+        padding: 0 1rem;
+        margin: -10px 0 -5px;
+        font-size: 7.5rem;
+        font-weight: 900;
+        letter-spacing: -8px;
+        background: linear-gradient(264deg, #ECF004 -0.42%, #4FA611 49.57%, #00BFFF 84.68%, #62B8FF 95.74%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @media (min-width: 640px) { // sm breakpoint
+            padding: 0 30px;
+            margin: -20px 0 -15px;
+            font-size: 12rem;
+            letter-spacing: -12.5px;
+        }
+        @media (min-width: 768px) { // md breakpoint
+            font-size: 13.75rem;
+        }
+    }
+
+    .Slogan {
+        color: var(--Neutral-White, #FFF);
+        font-size: 1.3rem;
+        font-weight: 100;
+        letter-spacing: -0.7px;
+        @media (min-width: 640px) { // sm breakpoint
+            font-size: 1.5rem;
+            letter-spacing: -0.8px;
+        }
+        @media (min-width: 768px) { // md breakpoint
+            font-size: 1.875rem;
+            letter-spacing: -0.9px;
+        }
+    }
+}
