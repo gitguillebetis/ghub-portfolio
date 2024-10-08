@@ -10,7 +10,7 @@
         padding-top: 250px;
     }
 
-    .Welcome {
+    .welcome {
         color: var(--Neutral-White, #FFF);
         font-size: 2.3rem;
         font-weight: 100;
@@ -24,7 +24,7 @@
         }
     }
 
-    .Ghub {
+    .ghub {
         padding: 0 1rem;
         margin: -10px 0 -5px;
         font-size: 7.5rem;
@@ -45,7 +45,7 @@
         }
     }
 
-    .Slogan {
+    .slogan {
         color: var(--Neutral-White, #FFF);
         font-size: 1.3rem;
         font-weight: 100;
@@ -58,5 +58,9 @@
             font-size: 1.875rem;
             letter-spacing: -0.9px;
         }
+    }
+
+    .techStack {
+        max-width: 1180px;
     }
 }

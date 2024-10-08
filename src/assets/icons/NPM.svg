@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+	<title>NPM-svg</title>
+	<style>
+		.s0 { fill: #cb3837 } 
+		.s1 { fill: #ffffff } 
+	</style>
+	<path class="s0" d="m0 78v85.5h71.2v14.3h56.8v-14.3h128v-85.5z"/>
+	<path fill-rule="evenodd" class="s1" d="m71.2 92.3v56.9h-14.4v-42.5h-14.3v42.5h-28.2v-56.9zm71.2 0v56.9h-28.2v14.3h-28.6v-71.2zm-14.4 14.4h-13.8v28.1h13.8zm114.2-14.3v56.8h-14.3v-42.5h-14.4v42.5h-14.3v-42.5h-14.3v42.5h-28.2v-56.8z"/>
+</svg>
