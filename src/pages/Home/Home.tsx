@@ -1,18 +1,12 @@
 import React from 'react';
 import styles from './Home.module.scss';
 import TechStack from '../../components/TechStack';
-import Employer from '../../components/Employer';
+import Employer from '../../components/Employer/Employer';
 import Maintenance from '../../components/Maintenance';
-import GrundfosLogo from '../../assets/employers/grundfos-inverted.svg';
-import ConcordiumLogo from '../../assets/employers/concordium-inverted.svg';
-import VassLogo from '../../assets/employers/vass-inverted.svg';
-import AgcoLogo from '../../assets/employers/agco-inverted.svg';
-import AltaPayLogo from '../../assets/employers/altapay-inverted.svg';
-import PhilipsLogo from '../../assets/employers/philips-inverted.svg';
 
 const Home: React.FC = () => {
 	// Toggle this variable to show/hide maintenance message
-	const isMaintenanceMode = true;
+	const isMaintenanceMode = false;
 
 	return (
 		<div className={`${styles.homeContainer} flex flex-col min-h-screen items-center`}>
@@ -29,7 +23,15 @@ const Home: React.FC = () => {
 				<Maintenance />
 			) : (
 				<>
-					<div className={`${styles.techStack} flex flex-wrap justify-center gap-4 my-56`}>
+					<div className={`${styles.employerContainer}`}>
+						<Employer logo="/assets/companyLogo/grundfos-inverted.svg" link="/grundfos" altText="Grundfos" id="grundfos" />
+						<Employer logo="/assets/companyLogo/concordium-inverted.svg" link="/concordium" altText="Concordium" id="concordium" />
+						<Employer logo="/assets/companyLogo/vass-inverted.svg" link="/vass" altText="Vass" id="vass" />
+						<Employer logo="/assets/companyLogo/agco-inverted.svg" link="/agco" altText="AGCO" id="agco" />
+						<Employer logo="/assets/companyLogo/altapay-inverted.svg" link="/altapay" altText="AltaPay" id="altapay" />
+						<Employer logo="/assets/companyLogo/philips-inverted.svg" link="/philips" altText="Philips" id="philips" />
+					</div>
+					<div className={`${styles.techStackContainer} flex flex-wrap justify-center gap-4 my-56`}>
 						<TechStack title="Modern JS Frameworks/Libraries" items={['react', 'vuejs', 'angular', 'jquery']} />
 						<TechStack title="Programming/Markup Languages" items={['javascript', 'typescript', 'html', 'css']} />
 						<TechStack title="Preprocessors" items={['sass', 'less']} />
@@ -39,14 +41,6 @@ const Home: React.FC = () => {
 						<TechStack title="CMS" items={['aem']} />
 						<TechStack title="Design Tools" items={['photoshop', 'illustrator', 'figma', 'invision']} />
 						<TechStack title="Video Editing" items={['aftereffects', 'premiere']} />
-					</div>
-					<div className="flex gap-6 mt-10">
-						<Employer logo={GrundfosLogo} link="/page/grundfos" altText="Grundfos" />
-						<Employer logo={ConcordiumLogo} link="/page/concordium" altText="Concordium" />
-						<Employer logo={VassLogo} link="/page/vass" altText="Vass" />
-						<Employer logo={AgcoLogo} link="/page/agco" altText="AGCO" />
-						<Employer logo={AltaPayLogo} link="/page/altapay" altText="AltaPay" />
-						<Employer logo={PhilipsLogo} link="/page/philips" altText="Philips" />
 					</div>
 				</>
 			)}

@@ -1,0 +1,65 @@
+#agco {
+    &:hover{
+        background-color: $agco-color;
+    }
+
+    img {
+        width: 253px;
+        padding: 30px 40px;
+    }
+}
+
+#altapay {
+    &:hover{
+        background-color: $altapay-color;
+    }
+
+    img {
+        width: 252px;
+        padding: 24px 40px;
+    }
+}
+
+#grundfos {
+    &:hover {
+        background-color: $grundfos-color;
+    }
+
+    img {
+        width: 380px;
+        padding: 35px 50px;
+    }
+}
+
+#concordium {
+    &:hover{
+        background-color: $concordium-color;
+    }
+
+    img {
+        width: 370px;
+        padding: 40px 50px;
+    }
+}
+
+#philips {
+    &:hover{
+        background-color: $philips-color;
+    }
+
+    img {
+        width: 215px;
+        padding: 50px 40px;
+    }
+}
+
+#vass {
+    &:hover{
+        background-color: $vass-color;
+    }
+
+    img {
+        width: 160px;
+        padding: 50px 40px;
+    }
+}

@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Function to format today’s date
 const getFormattedDate = () => {
   const today = new Date();
   const options: Intl.DateTimeFormatOptions = { weekday: 'long', month: 'long', day: 'numeric' };

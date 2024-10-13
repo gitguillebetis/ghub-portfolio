@@ -1,3 +1,4 @@
+@import '../../styles/global';
 
 .homeContainer  { 
     background: radial-gradient(230.13% 143.81% at 92.74% 11.86%, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.20) 100%), #070625;
@@ -60,7 +61,20 @@
         }
     }
 
-    .techStack {
+    .techStackContainer {
         max-width: 1180px;
     }
+
+    .employerContainer {
+        max-width: 1180px;
+        margin-top: 200px;
+        flex-wrap: wrap;
+        gap: 4rem 2rem;
+        display: flex;
+        border-radius: 1rem;
+        background: rgba(255, 255, 255, 0.07);
+        justify-content: center;
+        padding: 60px 40px;
+    }
+
 }

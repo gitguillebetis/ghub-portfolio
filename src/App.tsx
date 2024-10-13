@@ -1,25 +1,27 @@
-// src/App.tsx
 import React from 'react';
+import './App.scss';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
-import Grundfos from './pages/Grundfos/Grundfos';
-import Concordium from './pages/Concordium/Concordium';
-import Vass from './pages/Vass/Vass';
-import Agco from './pages/AGCO/AGCO';
-import AltaPay from './pages/Altapay/Altapay';
-import Philips from './pages/Philips/Philips';
+import Grundfos from './pages/Grundfos';
+import Concordium from './pages/Concordium';
+import Vass from './pages/Vass';
+import Agco from './pages/AGCO';
+import AltaPay from './pages/Altapay';
+import Philips from './pages/Philips';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/page/Grundfos/Grundfos" element={<Grundfos />} />
-        <Route path="/page/Concordium/Concordium" element={<Concordium />} />
-        <Route path="/page/Vass/Vass" element={<Vass />} />
-        <Route path="/page/AGCO/AGCO" element={<Agco />} />
-        <Route path="/page/AltaPay/AltaPay" element={<AltaPay />} />
-        <Route path="/page/Philips/Philips" element={<Philips />} />
+        <Route path="/grundfos" element={<Grundfos />} />
+        <Route path="/concordium" element={<Concordium />} />
+        <Route path="/vass" element={<Vass />} />
+        <Route path="/agco" element={<Agco />} />
+        <Route path="/altapay" element={<AltaPay />} />
+        <Route path="/philips" element={<Philips />} />
       </Routes>
     </Router>
   );

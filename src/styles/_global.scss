@@ -1,0 +1,11 @@
+@import './colors.scss';
+@import './employers.scss';
+
+:root {
+    --grundfos-color: #{$grundfos-color};
+    --agco-color: #{$agco-color};
+    --concordium-color: #{$concordium-color};
+    --vass-color: #{$vass-color};
+    --altapay-color: #{$altapay-color};
+    --philips-color: #{$philips-color};
+  }
