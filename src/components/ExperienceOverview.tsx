@@ -11,7 +11,7 @@ interface ExperienceOverviewProps {
 
 const ExperienceOverview: React.FC<ExperienceOverviewProps> = ({ jobTitle, jobDate, location, description, techStack, logoSrc }) => {
     return (
-        <div className="relative isolate max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 pt-8 sm:pt-10 md:pt-14 lg:pt-16 text-white">
+        <div className="relative isolate max-w-screen-xl mx-auto container-padding-gutters container-padding-top-small container-padding-bottom text-white">
             <section className="grid lg:grid-cols-2 gap-x-20 gap-y-12">
                 <div className="lg:col-span-2">
                     <img src={`/assets/companyLogo/${logoSrc}`} alt={`${jobTitle} logo`} className="h-[30px] sm:h-[40px] md:h-[45px] lg:h-[50px]" />

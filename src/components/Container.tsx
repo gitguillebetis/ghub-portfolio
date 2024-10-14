@@ -16,12 +16,12 @@ const Container: React.FC<ContainerProps> = ({ layout, background, padding = fal
             'width-xl': 'relative isolate max-w-screen-xl mx-auto'
         }[layout] || '';
 
-        const paddingClass = padding ? 'container-padding' : '';
+        const paddingClass = padding ? 'container-padding-bottom' : '';
         return `${widthClasses} ${paddingClass} text-white`.trim();
     };
 
     const backgroundClasses = background 
-    ? `container-padding-background ${background === 'darker' ? 'bg-black/20' : 'bg-white/10'}`
+    ? `container-padding-top-large ${background === 'darker' ? 'bg-black/20' : 'bg-white/10'}`
     : '';
 
     return (

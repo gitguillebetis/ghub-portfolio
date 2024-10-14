@@ -9,7 +9,7 @@ interface ImageParagraphProps {
     padding?: boolean;
     imageClasses?: string;
     paragraphClasses?: string;
-    slideDirection?: 'left' | 'right' | 'bottom' | 'fade'; // New slide direction options
+    slideDirection?: 'left' | 'right' | 'bottom' | 'fade'; 
 }
 
 const TitleContent: React.FC<{ title?: string }> = ({ title }) => (
@@ -61,7 +61,7 @@ const ImageParagraph: React.FC<ImageParagraphProps> = ({ layout, title, paragrap
     const isImageRight = layout === 'image-right';
     const isNoImage = layout === 'no-image';
     const isJustImage = layout === 'just-image';
-    const containerPaddingClass = padding ? 'container-padding' : '';
+    const containerPaddingClass = padding ? 'container-padding-bottom' : '';
 
     return (
         <>
