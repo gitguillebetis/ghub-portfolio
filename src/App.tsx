@@ -9,22 +9,23 @@ import Agco from './pages/AGCO';
 import AltaPay from './pages/Altapay';
 import Philips from './pages/Philips';
 import ScrollToTop from './components/ScrollToTop';
+import "./styles/_global.scss"
 
 function App() {
-  return (
-    <Router>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/grundfos" element={<Grundfos />} />
-        <Route path="/concordium" element={<Concordium />} />
-        <Route path="/vass" element={<Vass />} />
-        <Route path="/agco" element={<Agco />} />
-        <Route path="/altapay" element={<AltaPay />} />
-        <Route path="/philips" element={<Philips />} />
-      </Routes>
-    </Router>
-  );
+    return (
+        <Router>
+            <ScrollToTop />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/grundfos" element={<Grundfos />} />
+                <Route path="/concordium" element={<Concordium />} />
+                <Route path="/vass" element={<Vass />} />
+                <Route path="/agco" element={<Agco />} />
+                <Route path="/altapay" element={<AltaPay />} />
+                <Route path="/philips" element={<Philips />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;

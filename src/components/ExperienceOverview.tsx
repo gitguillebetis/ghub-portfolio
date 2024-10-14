@@ -1,5 +1,3 @@
-'use client'
-
 import TechStack from './TechStack';
 
 interface ExperienceOverviewProps {
@@ -11,11 +9,10 @@ interface ExperienceOverviewProps {
     logoSrc: string;
 }
 
-
 const ExperienceOverview: React.FC<ExperienceOverviewProps> = ({ jobTitle, jobDate, location, description, techStack, logoSrc }) => {
     return (
-        <section className="container relative isolate max-w-screen-xl mx-auto text-white px-4 sm:px-6 md:px-8 lg:px-10 p-8 sm:pt-10 md:pt-14 lg:pt-16">
-            <div className="grid lg:grid-cols-2 gap-x-20 gap-y-12">
+        <div className="relative isolate max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 pt-8 sm:pt-10 md:pt-14 lg:pt-16 text-white">
+            <section className="grid lg:grid-cols-2 gap-x-20 gap-y-12">
                 <div className="lg:col-span-2">
                     <img src={`/assets/companyLogo/${logoSrc}`} alt={`${jobTitle} logo`} className="h-[30px] sm:h-[40px] md:h-[45px] lg:h-[50px]" />
                 </div>
@@ -40,7 +37,7 @@ const ExperienceOverview: React.FC<ExperienceOverviewProps> = ({ jobTitle, jobDa
                     </div>
                     <div className="font-extralight tracking-wider leading-6 pt-6">
                         {description.map((paragraph, idx) => (
-                            <p className="pt-7">{paragraph}</p>
+                            <p className="pt-7 text-white/70">{paragraph}</p>
                         ))}
                     </div>
                 </div>
@@ -48,8 +45,8 @@ const ExperienceOverview: React.FC<ExperienceOverviewProps> = ({ jobTitle, jobDa
                     <h3 className="text-3xl font-medium tracking-[-0.9px] pb-8">Tools & Tech</h3>
                     <TechStack items={techStack} />
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     );
 };
 

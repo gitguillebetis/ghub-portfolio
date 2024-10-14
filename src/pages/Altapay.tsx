@@ -1,34 +1,27 @@
 import React from 'react';
-import Nav from '../components/Nav';
-import HeroImage from '../components/HeroImage';
-import ExperienceOverview from '../components/ExperienceOverview';
-import '../styles/_global.scss';
-import workData from '../assets/json/workExperience.json';
+import Container from '../components/Container';
+import ImageParagraph from '../components/ImageParagraph';
+import CompanyPageTemplate from '../components/CompanyPageTemplate';
 
-const experienceData = workData.find(item => item.id === 2);
+const altapay: React.FC = () => {
 
-const Grundfos: React.FC = () => {
 	return (
-		<div className="pb-[500px]" style={{ backgroundColor: 'var(--altapay-color)' }}>
-			<Nav />
-			{experienceData && (
-				<div>
-					<HeroImage
-						imageSrc={experienceData.backgroundImageSrc}
-						altText={experienceData.backgroundImageAlt}
-					/>
-					<ExperienceOverview
-						jobTitle={experienceData.jobTitle}
-						jobDate={experienceData.jobDate}
-						location={experienceData.location}
-						description={experienceData.description}
-						techStack={experienceData.techStack}
-						logoSrc={experienceData.logoSrc}
-					/>
-				</div>
-			)}
-		</div>
+		<div className="altapay-background">
+			<CompanyPageTemplate id={3}/>
+
+			<Container layout="width-xl" background='darker'>
+				<ImageParagraph
+					padding={true}
+					layout="no-image"
+					title="My Time at Altapay"
+					paragraphs={[
+						"At AltaPay, I found myself truly at my fullest, tapping into the full range of my skills. I had the opportunity to design across various mediums, including print, digital ads, interior design for the office in Søborg, web and mobile design, and stands for company events. To top it off, I even developed the company’s website and initiated work on the design system. AltaPay was a place where I could use all my abilities at 100%, allowing me to grow as both a designer and a developer."
+					]}
+				/>
+			</Container>
+
+		</div>	
 	);
 };
 
-export default Grundfos;
+export default altapay;

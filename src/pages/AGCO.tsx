@@ -1,35 +1,28 @@
 import React from 'react';
-import Nav from '../components/Nav';
-import HeroImage from '../components/HeroImage';
-import ExperienceOverview from '../components/ExperienceOverview';
-import '../styles/_global.scss';
-import workExperience from '../assets/json/workExperience.json';
+import Container from '../components/Container';
+import ImageParagraph from '../components/ImageParagraph';
+import CompanyPageTemplate from '../components/CompanyPageTemplate';
 
-const grundfosData = workExperience.find(item => item.id === 5);
-
-const Grundfos: React.FC = () => {
+const agco: React.FC = () => {
 
 	return (
-		<div className="pb-[500px]" style={{ backgroundColor: 'var(--agco-color)' }}>
-			<Nav />
-			{grundfosData && (
-				<div>
-					<HeroImage
-						imageSrc={grundfosData.backgroundImageSrc}
-						altText={grundfosData.backgroundImageAlt}
-					/>
-					<ExperienceOverview
-						jobTitle={grundfosData.jobTitle}
-						jobDate={grundfosData.jobDate}
-						location={grundfosData.location}
-						description={grundfosData.description}
-						techStack={grundfosData.techStack}
-						logoSrc={grundfosData.logoSrc}
-					/>
-				</div>
-			)}
-		</div>
+		<div className="agco-background">
+			<CompanyPageTemplate id={5}/>
+
+
+			<Container layout="width-xl" background='darker'>
+				<ImageParagraph
+					padding={true}
+					layout="no-image"
+					title="My Time at AGCO"
+					paragraphs={[
+						""
+					]}
+				/>
+			</Container>
+
+		</div>	
 	);
 };
 
-export default Grundfos;
+export default agco;

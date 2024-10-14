@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": 4,
         "company": "Grundfos",
         "jobTitle": "Senior AEM Front-End Developer",
         "jobDate": "October 2017 - November 2021",
@@ -15,7 +15,7 @@
         "logoSrc": "grundfos-inverted.svg"
     },
     {
-        "id": 2,
+        "id": 3,
         "company": "AltaPay",
         "jobTitle": "Senior Front-End Developer. Lead UI/UX Designer.",
         "jobDate": "January 2016 - October 2017",
@@ -30,7 +30,7 @@
         "logoSrc": "altapay-inverted.svg"
     },
     {
-        "id": 3,
+        "id": 2,
         "company": "Philips",
         "jobTitle": "Senior AEM Front-End Developer",
         "jobDate": "July 2013 – January 2016",
@@ -45,7 +45,7 @@
         "logoSrc": "philips-inverted.svg"
     },
     {
-        "id": 4,
+        "id": 6,
         "company": "Concordium",
         "jobTitle": "Lead UI/UX Designer. Front-End Engineer",
         "jobDate": "February 2023 - April 2024",
@@ -75,7 +75,7 @@
         "logoSrc": "agco-inverted.svg"
     },
     {
-        "id": 6,
+        "id": 1,
         "company": "VASS",
         "jobTitle": "Front-End & Design Manager",
         "jobDate": "July 2011 – July 2013",

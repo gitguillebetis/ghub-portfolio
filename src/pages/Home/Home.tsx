@@ -5,7 +5,6 @@ import Employer from '../../components/Employer/Employer';
 import Maintenance from '../../components/Maintenance';
 
 const Home: React.FC = () => {
-	// Toggle this variable to show/hide maintenance message
 	const isMaintenanceMode = false;
 
 	return (

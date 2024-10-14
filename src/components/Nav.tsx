@@ -1,5 +1,3 @@
-'use client'
-
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { FiMenu, FiX } from "react-icons/fi";
