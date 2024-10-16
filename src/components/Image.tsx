@@ -4,12 +4,13 @@ interface ImageProps {
     imageSrc: string;
     altText?: string;
     padding?: boolean;
-    classes?: string;
+    containerClasses?: string;
+    imageClasses?: string;
     shadowRounded?: boolean;
     slideDirection?: 'left' | 'right' | 'bottom' | 'fade';
 }
 
-const Image: React.FC<ImageProps> = ({ imageSrc, altText, classes = '', slideDirection = 'right', padding = false, shadowRounded = false }) => {
+const Image: React.FC<ImageProps> = ({ imageSrc, altText, containerClasses = '', imageClasses = '', slideDirection = 'right', padding = false, shadowRounded = false }) => {
     const [isVisible, setIsVisible] = useState(false);
     const imgRef = useRef<HTMLImageElement>(null);
 
@@ -34,12 +35,12 @@ const Image: React.FC<ImageProps> = ({ imageSrc, altText, classes = '', slideDir
     const shadowRoundedClass = shadowRounded ? 'image-rounded-shadow' : '';
 
     return (
-        <div className={`${classes} ${paddingClass} ${animationClass}`}>
+        <div className={`${containerClasses} ${paddingClass} ${animationClass}`}>
             <img
                 ref={imgRef}
                 src={imageSrc}
                 alt={altText}
-                className={`${shadowRoundedClass}`}
+                className={`${shadowRoundedClass} ${imageClasses}`}
             />
         </div>
     );

@@ -1,15 +1,3 @@
-@import '../../styles/global';
-
-.homeContainer  { 
-    background: radial-gradient(230.13% 143.81% at 92.74% 11.86%, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.20) 100%), #070625;
-    text-align: center;
-    padding-top: 180px;
-    @media (min-width: 640px) { // sm breakpoint
-        padding-top: 220px;
-    }
-    @media (min-width: 768px) { // md breakpoint
-        padding-top: 250px;
-    }
 
     .welcome {
         color: var(--Neutral-White, #FFF);
@@ -77,4 +65,3 @@
         padding: 60px 40px;
     }
 
-}

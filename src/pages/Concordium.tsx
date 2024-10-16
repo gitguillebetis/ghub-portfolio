@@ -1,6 +1,7 @@
 import React from 'react';
+import Maintenance from '../components/Maintenance';
 import Container from '../components/Container';
-import ImageParagraph from '../components/ImageParagraph';
+import Grid from '../components/Grid';
 import CompanyPageTemplate from '../components/CompanyPageTemplate';
 
 const concordium: React.FC = () => {
@@ -9,16 +10,10 @@ const concordium: React.FC = () => {
 		<div className="concordium-background">
 			<CompanyPageTemplate id={6}/>
 
-
-			<Container layout="width-xl" background='lighter'>
-				<ImageParagraph
-					padding={true}
-					layout="no-image"
-					title="My Time at Concordium"
-					paragraphs={[
-						""
-					]}
-				/>
+			<Container layout='width-xl'>
+				<Grid layout='1column' classes='mb-[200px] justify-items-center'>
+					<Maintenance date={false} message="we are currently uploading content for this page. Thank you for your patience, and we apologize for any inconvenience caused." />
+				</Grid> 
 			</Container>
 
 		</div>	

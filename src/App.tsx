@@ -9,7 +9,7 @@ import Agco from './pages/AGCO';
 import AltaPay from './pages/Altapay';
 import Philips from './pages/Philips';
 import ScrollToTop from './components/ScrollToTop';
-import "./styles/_global.scss"
+import './styles/_global.scss'
 
 function App() {
     return (

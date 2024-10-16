@@ -2,10 +2,13 @@
 @import './employers.scss';
 @import './background.scss';
 @import './padding.scss';
+@import './mansory.scss';
 @import './slide-in-effect.scss';
 
 
 .image-rounded-shadow {
-    @apply rounded-xl overflow-hidden shadow-[0_0_16px_rgba(0,0,0,0.3)];
+    border-radius: 0.75rem; /* Equivalent to rounded-xl */
+    overflow: hidden;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3); /* Custom shadow */
 }
 

@@ -15,7 +15,7 @@ const Grundfos: React.FC = () => {
 			<Container layout="width-xl" background="lighter" padding={true}>
 				<Grid layout="2column" padding={true}>
 					<Image 
-						classes="order-2 lg:order-1 w-full sm:w-3/4 lg:w-full"
+						containerClasses="order-2 lg:order-1 w-full sm:w-3/4 lg:w-full"
 						shadowRounded={true}
 						imageSrc="/assets/images/grundfos/new-people-popup.avif"
 						altText="New Profile Card for People @ Grundfos Insite"
@@ -33,7 +33,7 @@ const Grundfos: React.FC = () => {
 				<Grid layout="1column">
 					<Image
 						slideDirection="fade"
-						classes="w-full lg:w-4/5"
+						containerClasses="w-full lg:w-4/5 justify-self-center"
 						shadowRounded={true}
 						imageSrc="/assets/images/grundfos/new-people-search.avif"
 						altText="New Search Page for People @ Grundfos Insite"
@@ -45,7 +45,7 @@ const Grundfos: React.FC = () => {
 				<Grid layout="1column">
 					<Paragraph
 						padding={true}
-						classes="w-full lg:w-4/5 container-padding-top-large"
+						classes="w-full lg:w-4/5 container-padding-top-large justify-self-center"
 						title="Where to Buy issue"
 						paragraphs={[
 							"The initial design of the Where to Buy page on the mobile version had a significant issue: the collapsible list of distributors covered most of the map. As soon as a user clicked on one of the distributors to expand the details, the map would be completely blocked, leaving no visibility. This created a poor user experience, as the map was a key element for users trying to locate distributors.",
@@ -60,13 +60,13 @@ const Grundfos: React.FC = () => {
 				</Grid>
 				<Grid layout="2column" padding={true}>
 					<Image 
-						classes="order-2 lg:order-1 w-full sm:w-3/4 lg:w-full"
+						containerClasses="order-2 lg:order-1 w-full sm:w-3/4 lg:w-full"
 						imageSrc="/assets/images/grundfos/Where-to-buy-after.avif"
 						altText="Where to buy page with the solution"
 						slideDirection="left"
 					/>
 					<Paragraph
-						classes="order-1 lg:order-2"
+						classes="order-1 lg:order-2 self-center"
 						title="The solution"
 						paragraphs={[
 							"To solve the problem, I designed a horizontal, scrollable list that allowed the map to remain visible. This interaction pattern is something mobile users are accustomed to, providing a familiar experience. When a user clicked on a distributor, the information would expand, covering only half of the map, ensuring that the map was still partially visible for reference. Additionally, when the user clicked again, the information would collapse, fully restoring the map’s visibility.",
