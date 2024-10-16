@@ -1,20 +1,13 @@
-import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { FiMenu, FiX } from "react-icons/fi";
-
-
-const navigation = [
-  { name: 'Grundfos', href: '/grundfos' },
-  { name: 'Concordium', href: '/concordium' },
-  { name: 'Vass', href: '/vass' },
-  { name: 'AGCO', href: '/agco' },
-  { name: 'Altapay', href: '/altapay' },
-  { name: 'Philips', href: '/philips' },
-]
+import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Dialog, DialogPanel } from '@headlessui/react';
+import { FiMenu, FiX } from 'react-icons/fi';
+import data from '../assets/json/data.json';
 
 export default function Nav() {
-
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const companies = data.companies;
+    const location = useLocation(); // Get current route location
 
     return (
         <header className="absolute inset-x-0 top-0 z-50 text-white py-6 px-4 sm:px-6 md:px-8 lg:px-10">
@@ -33,18 +26,34 @@ export default function Nav() {
                     <button
                         type="button"
                         onClick={() => setMobileMenuOpen(true)}
-                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
-                        >
+                        className="-m-2.5 inline-flex items-center justify-center p-2.5 text-white"
+                    >
                         <span className="sr-only">Open main menu</span>
                         <FiMenu aria-hidden="true" className="h-6 w-6" />
                     </button>
                 </div>
-                <div className="hidden lg:flex lg:gap-x-12">
-                    {navigation.map((item) => (
-                        <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-white">
-                            {item.name}
-                        </a>
-                    ))}
+                <div className="hidden lg:flex">
+                    {companies.map((company) => {
+                        const isActive = location.pathname === company.href;
+
+                        return (
+                            <Link
+                                key={company.companyID}
+                                to={isActive ? '#' : company.href}
+                                className={`text-sm font-semibold leading-6 px-6 py-2 ${
+                                    isActive
+                                        ? 'text-white cursor-default'
+                                        : 'text-white rounded-md hover:bg-white/20'
+                                }`}
+                                style={{
+                                    borderBottom: isActive ? '2px solid rgba(255, 255, 255, 0.5)' : 'none'
+                                }}
+                                onClick={(e) => isActive && e.preventDefault()} // Prevents navigation if link is active
+                            >
+                                {company.name}
+                            </Link>
+                        );
+                    })}
                 </div>
             </nav>
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
@@ -54,8 +63,8 @@ export default function Nav() {
                             <button
                                 type="button"
                                 onClick={() => setMobileMenuOpen(false)}
-                                className="-m-2.5 rounded-md p-2.5 text-white-700"
-                                >
+                                className="-m-2.5 p-2.5 text-white-700"
+                            >
                                 <span className="sr-only">Close menu</span>
                                 <FiX aria-hidden="true" className="h-6 w-6" />
                             </button>
@@ -63,14 +72,27 @@ export default function Nav() {
                         <div className="mt-6 flow-root">
                             <div className="-my-6 divide-y divide-white-500/10">
                                 <div className="space-y-2 py-6">
-                                    {navigation.map((item) => (
-                                        <a
-                                            key={item.name}
-                                            href={item.name}
-                                            className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-white/20">
-                                            {item.name}
-                                        </a>
-                                    ))}
+                                    {companies.map((company) => {
+                                        const isActive = location.pathname === company.href;
+
+                                        return (
+                                            <a
+                                                key={company.companyID}
+                                                href={isActive ? '#' : company.href}
+                                                className={`-mx-3 block px-3 py-2 text-base font-semibold leading-7 ${
+                                                    isActive
+                                                        ? 'text-white cursor-default'
+                                                        : 'text-white rounded-md hover:bg-white/20'
+                                                }`}
+                                                style={{
+                                                    borderBottom: isActive ? '2px solid rgba(255, 255, 255, 0.5)' : 'none'
+                                                }}
+                                                onClick={(e) => isActive && e.preventDefault()}
+                                            >
+                                                {company.name}
+                                            </a>
+                                        );
+                                    })}
                                 </div>
                             </div>
                         </div>
@@ -78,5 +100,5 @@ export default function Nav() {
                 </div>
             </Dialog>
         </header>
-    )
+    );
 }

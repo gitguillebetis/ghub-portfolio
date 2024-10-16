@@ -2,13 +2,13 @@ import React from 'react';
 import Maintenance from '../components/Maintenance';
 import Container from '../components/Container';
 import Grid from '../components/Grid';
-import CompanyPageTemplate from '../components/CompanyPageTemplate';
+import ExperiencePageTemplate from '../components/ExperiencePageTemplate';
 
 const concordium: React.FC = () => {
 
 	return (
 		<div className="agco-background">
-			<CompanyPageTemplate id={5}/>
+			<ExperiencePageTemplate id={5}/>
 
 			<Container layout='width-xl'>
 				<Grid layout='1column' classes='mb-[200px] justify-items-center'>

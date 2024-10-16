@@ -1,5 +1,5 @@
 import React from 'react';
-import CompanyPageTemplate from '../components/CompanyPageTemplate';
+import CompanyPageTemplate from '../components/ExperiencePageTemplate';
 import Container from '../components/Container';
 import Grid from '../components/Grid';
 import Image from '../components/Image';

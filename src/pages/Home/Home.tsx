@@ -5,6 +5,7 @@ import Employer from '../../components/Employer/Employer';
 import Maintenance from '../../components/Maintenance';
 import Container from '../../components/Container';
 import Grid from '../../components/Grid';
+import data from '../../assets/json/data.json';
 
 const Home: React.FC = () => {
 	const isMaintenanceMode = false;
@@ -28,12 +29,15 @@ const Home: React.FC = () => {
 					) : (
 						<>
 							<div className={`${styles.employerContainer}`}>
-								<Employer logo="/assets/companyLogo/grundfos-inverted.svg" link="/grundfos" altText="Grundfos" id="grundfos" />
-								<Employer logo="/assets/companyLogo/concordium-inverted.svg" link="/concordium" altText="Concordium" id="concordium" />
-								<Employer logo="/assets/companyLogo/vass-inverted.svg" link="/vass" altText="Vass" id="vass" />
-								<Employer logo="/assets/companyLogo/agco-inverted.svg" link="/agco" altText="AGCO" id="agco" />
-								<Employer logo="/assets/companyLogo/altapay-inverted.svg" link="/altapay" altText="AltaPay" id="altapay" />
-								<Employer logo="/assets/companyLogo/philips-inverted.svg" link="/philips" altText="Philips" id="philips" />
+								{data.companies.map(company => (
+									<Employer 
+										key={company.companyID}
+										logo={company.logoSrc}
+										link={company.href}
+										altText={company.name}
+										id={`company-${company.name}`}
+									/>
+								))}
 							</div>
 							<div className={`${styles.techStackContainer} flex flex-wrap justify-center gap-4 my-56`}>
 								<TechStack title="Modern JS Frameworks/Libraries" items={['react', 'vuejs', 'angular', 'jquery']} />

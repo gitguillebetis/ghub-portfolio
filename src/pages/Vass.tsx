@@ -2,7 +2,7 @@ import React from 'react';
 import Maintenance from '../components/Maintenance';
 import Container from '../components/Container';
 import Grid from '../components/Grid';
-import CompanyPageTemplate from '../components/CompanyPageTemplate';
+import CompanyPageTemplate from '../components/ExperiencePageTemplate';
 
 const concordium: React.FC = () => {
 

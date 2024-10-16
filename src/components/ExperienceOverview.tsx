@@ -14,7 +14,7 @@ const ExperienceOverview: React.FC<ExperienceOverviewProps> = ({ jobTitle, jobDa
         <div className="relative isolate max-w-screen-xl mx-auto container-padding-gutters container-padding-top-small container-padding-bottom text-white">
             <section className="grid lg:grid-cols-2 gap-x-20 gap-y-12">
                 <div className="lg:col-span-2">
-                    <img src={`/assets/companyLogo/${logoSrc}`} alt={`${jobTitle} logo`} className="h-[30px] sm:h-[40px] md:h-[45px] lg:h-[50px]" />
+                    <img src={`${logoSrc}`} alt={`${jobTitle} logo`} className="h-[30px] sm:h-[40px] md:h-[45px] lg:h-[50px]" />
                 </div>
                 <div className="lg:col-span-1">
                     <div>
@@ -25,7 +25,7 @@ const ExperienceOverview: React.FC<ExperienceOverviewProps> = ({ jobTitle, jobDa
                         </div>
                         <div className="border-b border-white opacity-20"></div>
                         <div className="py-4 flex">
-                            <span className="font-medium w-24 sm:w-32">Date:</span>
+                            <span className="font-medium w-24 sm:w-32">Period:</span>
                             <span className="font-extralight">{jobDate}</span>
                         </div>
                         <div className="border-b border-white opacity-20"></div>

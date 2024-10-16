@@ -1,0 +1,97 @@
+{
+    "companies": [
+      { "companyID": 1, "name": "Grundfos", "href": "/grundfos", "logoSrc": "/assets/companyLogo/grundfos-inverted.svg" },
+      { "companyID": 2, "name": "Concordium", "href": "/concordium", "logoSrc": "/assets/companyLogo/concordium-inverted.svg" },
+      { "companyID": 3, "name": "Vass", "href": "/vass", "logoSrc": "/assets/companyLogo/vass-inverted.svg" },
+      { "companyID": 4, "name": "AGCO", "href": "/agco", "logoSrc": "/assets/companyLogo/agco-inverted.svg" },
+      { "companyID": 5, "name": "Altapay", "href": "/altapay", "logoSrc": "/assets/companyLogo/altapay-inverted.svg" },
+      { "companyID": 6, "name": "Philips", "href": "/philips", "logoSrc": "/assets/companyLogo/philips-inverted.svg" }
+    ],
+    "experience": [
+      {
+        "experienceID": 4,
+        "companyID": 1,
+        "jobTitle": "Senior AEM Front-End Developer",
+        "jobDate": "October 2017 - November 2021",
+        "location": "Bjerringbro, DENMARK",
+        "description": [
+          "As a Senior AEM Frontend Developer, I played a key role in the Grundfos Digital Transformation project. Our team rebuilt the Grundfos website, seamlessly integrating Grundfos Product Center, MyGrundfos, and the e-commerce platform to create a unified user journey, significantly enhancing the overall experience for Grundfos customers.",
+          "In this project, I acted as a bridge between the development team and Grundfos Design, ensuring a cohesive end-to-end user experience. I generated detailed product design specifications to provide clear guidance for the development team and supported the Design Team by redesigning UI screens to improve user interaction and web integration."
+        ],
+        "techStack": ["VueJS", "Typescript", "sass", "invision", "nodeJS", "webpack", "gulp", "npm", "photoshop", "javascript", "jquery", "less", "aem"],
+        "backgroundImageSrc": "hero-image-grundfos.avif",
+        "backgroundImageAlt": "Technician servicing a Grundfos water pump system"
+      },
+      {
+        "experienceID": 3,
+        "companyID": 5,
+        "jobTitle": "Senior Front-End Developer. Lead UI/UX Designer.",
+        "jobDate": "January 2016 - October 2017",
+        "location": "Copenhagen, DENMARK",
+        "description": [
+          "As a Senior Frontend Developer at AltaPay, I collaborated closely with a User Interface & Graphic Designer as part of the Marketing Team to rebuild the company’s corporate image. This project involved redesigning the website, creating sales print materials, designing event stands, and managing social media, among other tasks. Through wireframing and prototyping, I planned and visualized the platform, ensuring a smooth and user-friendly experience.",
+          "To enhance product interaction, I incorporated user-centered design principles, creating intuitive interfaces that align with users' needs. I conducted UX research to gain insights into user preferences and utilized journey mapping in the design process, refining user interactions and optimizing the overall experience."
+        ],
+        "techStack": ["jquery", "JavaScript", "HTML", "CSS", "less", "webpack", "npm", "gulp", "photoshop", "illustrator"],
+        "backgroundImageSrc": "hero-image-altapay.avif",
+        "backgroundImageAlt": "Woman shopping online using a digital payment platform by AltaPay"
+      },
+      {
+        "experienceID": 2,
+        "companyID": 6,
+        "jobTitle": "Senior AEM Front-End Developer",
+        "jobDate": "July 2013 – January 2016",
+        "location": "Eindhoven, NETHERLANDS",
+        "description": [
+          "As an AEM Senior Frontend Developer on Philips’ Digital Transformation project, I led the redevelopment of their website to align with new brand guidelines. This work emphasized mobile-first and responsive design principles to ensure a cohesive user experience across devices. Throughout the project, I collaborated closely with stakeholders to maintain alignment with Philips' strategic goals.",
+          "Drawing on my extensive UI/UX experience, I acted as a bridge between the development team and Philips Design, facilitating a seamless end-to-end user experience. I also supported the design team by assisting in the creation of interaction design specifications, ensuring that every element met both functional and aesthetic standards."
+        ],
+        "techStack": ["jQuery", "HTML", "css", "javascript", "less", "jenkins", "aem"],
+        "backgroundImageSrc": "hero-image-philips.avif",
+        "backgroundImageAlt": "Philips Ambilight TV and HUE LED lighting in a living room with two people playing video games"
+      },
+      {
+        "experienceID": 6,
+        "companyID": 2,
+        "jobTitle": "Lead UI/UX Designer. Front-End Engineer",
+        "jobDate": "February 2023 - April 2024",
+        "location": "Aarhus, DENMARK",
+        "description": [
+          "I led the complete redesign of the new Concordium Wallet, applying user-centered design principles to develop an intuitive user interface. In this role, I organized collaborative design thinking sessions to foster a creative environment and generate fresh ideas. Through usability testing, I gathered valuable feedback and advocated for essential design adjustments to enhance the user experience. Additionally, I contributed to rapid prototyping using Figma and Adobe Creative Suite, which supported the development of new features while ensuring design consistency across all product outlets.",
+          "To strengthen the wallet’s brand familiarity, I built Concordium’s design system in Figma using Design Tokens and executed interaction designs for key product features. My technical contributions included developing a Front-End framework in React, which enhanced the wallet’s performance and scalability. This holistic approach ensured a cohesive and user-friendly experience across the wallet interface."
+        ],
+        "techStack": ["React", "Typescript", "sass", "nodeJS", "webpack", "npm", "photoshop", "illustrator", "figma"],
+        "backgroundImageSrc": "hero-image-concordium.avif",
+        "backgroundImageAlt": "3D geometric triangles floating in an abstract space"
+      },
+      {
+        "experienceID": 5,
+        "companyID": 4,
+        "jobTitle": "Senior Front-End Engineer. Senior UI/UX Designer",
+        "jobDate": "November 2021 – February 2023",
+        "location": "Randers, DENMARK",
+        "description": [
+          "I maintained applications for various company products, primarily using Angular to ensure consistent functionality and performance. In addition to maintenance, I led the development of the company’s Design System, creating a structured, reusable approach that aligned with the company’s visual and functional standards.",
+          "The Design System was built as a component-based framework using Angular Material and followed Atomic Design principles for scalability and efficiency. I also developed wireframes and prototypes in Figma, which enhanced the interaction design of key product features, ensuring a seamless and intuitive user experience."
+        ],
+        "techStack": ["Angular", "Typescript", "html", "css", "sass", "nodeJS", "webpack", "npm", "photoshop", "illustrator", "figma"],
+        "backgroundImageSrc": "hero-image-agco.avif",
+        "backgroundImageAlt": ""
+      },
+      {
+        "experienceID": 1,
+        "companyID": 3,
+        "jobTitle": "Front-End & Design Manager",
+        "jobDate": "July 2011 – July 2013",
+        "location": "Madrid, SPAIN",
+        "description": [
+          "As Head of the Front-End and Design Department, I led a team of six developers and two designers, ensuring that each team member had a well-defined role with specific goals and targets. In this role, I also managed and mentored two junior designers, guiding them in effective user experience design techniques and fostering their growth within the team. I regularly met with clients to gather requirements, deliver tailored solutions, and present final products that aligned with their expectations.",
+          "To refine our design processes, I conducted detailed UX research, leveraging the insights to guide and enhance project outcomes. I also facilitated design thinking sessions that encouraged creativity and collaboration among team members. My work included designing visually engaging interfaces with Adobe Illustrator and Photoshop, creating interfaces that were both functional and visually appealing."
+        ],
+        "techStack": ["javascript", "jquery", "html", "css", "photoshop", "illustrator"],
+        "backgroundImageSrc": "hero-image-vass.avif",
+        "backgroundImageAlt": ""
+      }
+    ]
+  }
+  
