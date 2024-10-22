@@ -9,30 +9,75 @@ import ScreenshotsSpread from '../components/ScreenshotsSpread';
 
 const Altapay: React.FC = () => { 
 
-	const imagesMansory = Array.from({ length: 15 }, (_, idx) => `/assets/images/altapay/mansory/New Project-${idx + 1}.avif`);
-	const imagesScreenshots = {
-		column1: [
-			{ image: '/assets/images/altapay/screenshots/desktop-1.avif', rotate: '-7deg', zindex: '4' },
-			{ image: '/assets/images/altapay/screenshots/desktop-2.avif', rotate: '-3deg', zindex: '1' },
-			{ image: '/assets/images/altapay/screenshots/desktop-3.avif', rotate: '4deg', zindex: '2' },
-			{ image: '/assets/images/altapay/screenshots/desktop-4.avif', rotate: '-8deg', zindex: '1' },
-			{ image: '/assets/images/altapay/screenshots/desktop-5.avif', rotate: '-4deg', zindex: '3' },
-		],
-		column2: [
-			{ image: '/assets/images/altapay/screenshots/desktop-6.avif', rotate: '9deg', zindex: '3' },
-			{ image: '/assets/images/altapay/screenshots/desktop-7.avif', rotate: '1deg', zindex: '3' },
-			{ image: '/assets/images/altapay/screenshots/desktop-8.avif', rotate: '-5deg', zindex: '1' },
-			{ image: '/assets/images/altapay/screenshots/desktop-9.avif', rotate: '3deg', zindex: '3' },
+	const altapayMasonryData = {
+		breakpoints: {
+			'xs': {
+				parallaxSpeed: [20, 55],
+				columns: 2,
+				parentClasses: 'grid grid-cols-2 gap-2',
+				childClasses: 'grid gap-2',
+			},
+			'sm': {
+				parallaxSpeed: [20, 55],
+				columns: 2,
+				parentClasses: 'grid grid-cols-2 gap-3 max-w-md mx-auto',
+				childClasses: 'grid gap-3',
+			},
+			'md': {
+				parallaxSpeed: [20, 55, 80],
+				columns: 3,
+				parentClasses: 'grid grid-cols-3 gap-4 max-w-xl mx-auto',
+				childClasses: 'grid gap-4',
+			},
+			'lg': {
+				parallaxSpeed: [30, 60, 20, 5],
+				columns: 4,
+				parentClasses: 'grid grid-cols-4 gap-4',
+				childClasses: 'grid gap-4',
+			}
+		},
+		images: [
+			{ imgSrc: '/assets/images/altapay/masonry/mobile-1.avif', alt: '' },
+			{ imgSrc: '/assets/images/altapay/masonry/mobile-2.avif', alt: '' },
+			{ imgSrc: '/assets/images/altapay/masonry/mobile-3.avif', alt: '' },
+			{ imgSrc: '/assets/images/altapay/masonry/mobile-4.avif', alt: '' },
+			{ imgSrc: '/assets/images/altapay/masonry/mobile-5.avif', alt: '' },
+			{ imgSrc: '/assets/images/altapay/masonry/mobile-6.avif', alt: '' },
+			{ imgSrc: '/assets/images/altapay/masonry/mobile-7.avif', alt: '' },
+			{ imgSrc: '/assets/images/altapay/masonry/mobile-8.avif', alt: '' },
+			{ imgSrc: '/assets/images/altapay/masonry/mobile-9.avif', alt: '' },
+			{ imgSrc: '/assets/images/altapay/masonry/mobile-10.avif', alt: '' },
+			{ imgSrc: '/assets/images/altapay/masonry/mobile-11.avif', alt: '' },
+			{ imgSrc: '/assets/images/altapay/masonry/mobile-12.avif', alt: '' },
+			{ imgSrc: '/assets/images/altapay/masonry/mobile-1.avif', alt: '' },
+			{ imgSrc: '/assets/images/altapay/masonry/mobile-14.avif', alt: '' },
+			{ imgSrc: '/assets/images/altapay/masonry/mobile-15.avif', alt: '' }
 		]
 	};
 	
 
+	const imagesScreenshots = {
+		column1: [
+			{ image: '/assets/images/altapay/screenshots/desktop-1.avif', rotate: '-7deg', zindex: '4', parallax: '-5' },
+			{ image: '/assets/images/altapay/screenshots/desktop-2.avif', rotate: '-3deg', zindex: '1', parallax: '-4' },
+			{ image: '/assets/images/altapay/screenshots/desktop-3.avif', rotate: '4deg', zindex: '2', parallax: '9' },
+			{ image: '/assets/images/altapay/screenshots/desktop-4.avif', rotate: '-8deg', zindex: '1', parallax: '-3' },
+			{ image: '/assets/images/altapay/screenshots/desktop-5.avif', rotate: '-4deg', zindex: '3', parallax: '-4' },
+		],
+		column2: [
+			{ image: '/assets/images/altapay/screenshots/desktop-6.avif', rotate: '9deg', zindex: '3', parallax: '6' },
+			{ image: '/assets/images/altapay/screenshots/desktop-7.avif', rotate: '1deg', zindex: '3', parallax: '3' },
+			{ image: '/assets/images/altapay/screenshots/desktop-8.avif', rotate: '-5deg', zindex: '1', parallax: '1' },
+			{ image: '/assets/images/altapay/screenshots/desktop-9.avif', rotate: '3deg', zindex: '3', parallax: '8' },
+		]
+	};
+	
 	return (
 		<div className="altapay-background">
 
 			<CompanyPageTemplate id={3} />
 
-			<Container layout="width-full">
+			<Container layout="width-full" classes="mt-[110px]">
 				<Grid layout="2column" padding={true}>				
 					<Paragraph
 						title="Desktop"
@@ -44,21 +89,21 @@ const Altapay: React.FC = () => {
 					/>					
 					<Image 
                         imageSrc="/assets/images/altapay/ipad-mobile-payments.avif"
-                        altText="New Profile Card for People @ Grundfos Insite"
+                        altText="Altapay Desktop version"
                         containerClasses='w-[80%] md:w-[60%] lg:w-[800px] xl:w-[900px] 2xl:w-[1000px] justify-self-center lg:justify-self-start'
                     />
 				</Grid>
 			</Container>
 
-			<Container layout="width-full">
-				<ScreenshotsSpread imagesSrc={imagesScreenshots} />
-			</Container>
+            <Container layout="width-full">
+                <ScreenshotsSpread imagesSrc={imagesScreenshots} />
+            </Container>
 			
-			<Container layout="width-full">
+			<Container layout="width-full" classes="mt-[110px]">
                 <Grid layout="2column" classes="md:grid-cols-[40%,60%] lg:grid-cols-[35%,65%] md:gap-5 lg:gap-20">               
                     <Image 
                         imageSrc="/assets/images/altapay/iphone-home.avif"
-                        altText="New Profile Card for People @ Grundfos Insite"
+                        altText="Altapay mobile version"
                         containerClasses="order-2 md:order-1 justify-self-center md:justify-self-end w-[50%] md:w-[90%] lg:w-[370px]"
 						imageClasses=""
                         slideDirection="left"
@@ -75,9 +120,7 @@ const Altapay: React.FC = () => {
 			</Container>
 
 			<Container layout="width-xl">
-				<Grid layout="1column" padding={true}>
-					<MasonryGrid images={imagesMansory} />
-				</Grid>
+					<MasonryGrid data={altapayMasonryData} />
 			</Container>
 
 			<Container layout="width-xl" background='darker'>

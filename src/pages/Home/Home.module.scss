@@ -34,20 +34,6 @@
         }
     }
 
-    .slogan {
-        color: var(--Neutral-White, #FFF);
-        font-size: 1.3rem;
-        font-weight: 100;
-        letter-spacing: -0.7px;
-        @media (min-width: 640px) { // sm breakpoint
-            font-size: 1.5rem;
-            letter-spacing: -0.8px;
-        }
-        @media (min-width: 768px) { // md breakpoint
-            font-size: 1.875rem;
-            letter-spacing: -0.9px;
-        }
-    }
 
     .techStackContainer {
         max-width: 1180px;

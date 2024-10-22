@@ -29,8 +29,8 @@
         "jobDate": "January 2016 - October 2017",
         "location": "Copenhagen, DENMARK",
         "description": [
-          "As a Senior Frontend Developer at AltaPay, I collaborated closely with a User Interface & Graphic Designer as part of the Marketing Team to rebuild the company’s corporate image. This project involved redesigning the website, creating sales print materials, designing event stands, and managing social media, among other tasks. Through wireframing and prototyping, I planned and visualized the platform, ensuring a smooth and user-friendly experience.",
-          "To enhance product interaction, I incorporated user-centered design principles, creating intuitive interfaces that align with users' needs. I conducted UX research to gain insights into user preferences and utilized journey mapping in the design process, refining user interactions and optimizing the overall experience."
+          "As a Senior Frontend Developer and UI/UX & Graphic Designer within the Marketing Team, I rebuilt the company’s corporate image by redesigning the website, creating sales print materials, designing event stands, and managing social media, among other tasks. I also established corporate standards and guidelines to ensure consistency across all mediums. Additionally, I built a Design System with reusable components, which helped create a more robust, scalable, and maintainable front-end application, improving overall development efficiency and consistency.",
+          "To enhance the user experience, I used wireframing and prototyping to plan and visualize the platform, ensuring a seamless and intuitive interface. I incorporated user-centered design principles, conducted UX research to understand user needs and preferences, and implemented journey mapping to refine interactions and optimize the design process for a smoother user experience."
         ],
         "techStack": ["jquery", "JavaScript", "HTML", "CSS", "less", "webpack", "npm", "gulp", "photoshop", "illustrator"],
         "backgroundImageSrc": "hero-image-altapay.avif",

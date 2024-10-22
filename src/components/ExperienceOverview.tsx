@@ -20,24 +20,24 @@ const ExperienceOverview: React.FC<ExperienceOverviewProps> = ({ jobTitle, jobDa
                     <div>
                         <div className="border-b border-white opacity-20"></div>
                         <div className="py-4 flex">
-                            <span className="font-medium w-24 sm:w-32">Title:</span>
-                            <span className="font-extralight">{jobTitle}</span>
+                            <div className="font-medium w-24 sm:w-32 flex-shrink-0">Title:</div>
+                            <div className="font-extralight">{jobTitle}</div>
                         </div>
                         <div className="border-b border-white opacity-20"></div>
                         <div className="py-4 flex">
-                            <span className="font-medium w-24 sm:w-32">Period:</span>
-                            <span className="font-extralight">{jobDate}</span>
+                            <div className="font-medium w-24 sm:w-32 flex-shrink-0">Period:</div>
+                            <div className="font-extralight">{jobDate}</div>
                         </div>
                         <div className="border-b border-white opacity-20"></div>
                         <div className="py-4 flex">
-                            <span className="font-medium w-24 sm:w-32">Location:</span>
-                            <span className="font-extralight">{location}</span>
+                            <div className="font-medium w-24 sm:w-32 flex-shrink-0">Location:</div>
+                            <div className="font-extralight">{location}</div>
                         </div>
                         <div className="border-b border-white opacity-20"></div>
                     </div>
                     <div className="font-extralight tracking-wider leading-6 pt-6">
                         {description.map((paragraph, idx) => (
-                            <p className="pt-7 text-white/70">{paragraph}</p>
+                            <p key={idx} className="pt-7 text-white/70">{paragraph}</p>
                         ))}
                     </div>
                 </div>

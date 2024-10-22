@@ -11,6 +11,7 @@ import Philips from './pages/Philips';
 import ScrollToTop from './components/ScrollToTop';
 import './styles/_global.scss'
 
+
 function App() {
     return (
         <Router>
